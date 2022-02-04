@@ -1,3 +1,0 @@
-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
-
-git push https://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@github.com/ESI16040/DIW-Rocio-Pinzon.git
