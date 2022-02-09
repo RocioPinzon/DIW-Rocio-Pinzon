@@ -27,11 +27,11 @@
                     <div class="form-group d-flex justify-content-between py-3">
                         <div class="w-50 px-1">
                             <label for="name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" required>
                         </div>
                         <div class="w-50 px-1">
                             <label  for="apellidos" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" required>
                         </div>
                     </div>
 
@@ -42,7 +42,8 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text">@</div>
                             </div>
-                            <input type="text" class="form-control"  name="form-control" placeholder="Usuario">    
+                            <input type="text" class="form-control"  name="form-control" placeholder="Usuario" required>    
+                            
                         </div>
                     </div>
 
@@ -53,7 +54,7 @@
                     
                     <div class="w-100 px-1 py-3">
                         <label  for="direccion" class="form-label" >Dirección</label>
-                        <input type="text" class="form-control" placeholder="1234 Calle Principal">
+                        <input type="text" class="form-control" placeholder="1234 Calle Principal" required>
                     </div>
 
                     <div class="w-100 px-1 py-3">
@@ -85,16 +86,15 @@
                         <div class="w-100 px-1">
 
                             <label for="codigoPostal" class="form-label" >Código Postal</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" required>
                         
                         </div>
-
                     </div>
                     
                     <div class="w-100 px-1 py-4 text-dark border-bottom">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Enviar a la misma direcicón de facturación</label>
+                            <label class="form-check-label" for="exampleCheck1">Enviar a la misma dirección de facturación</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -126,35 +126,35 @@
                     <div class="form-group d-flex justify-content-between pb-4">
                         <div class="w-50 px-1">
                             <label for="nombreTarjeta" class="form-label">Nombre en la tarjeta</label>
-                            <input type="text" class="form-control" aria-describedby="ayuda-nombreTarjeta">
+                            <input type="text" class="form-control" aria-describedby="ayuda-nombreTarjeta" required>
                             <div id="ayuda-nombreTarjeta" class="form-text">
                                 Nombre completo como se muestra en la tarjeta
                             </div>
                         </div>
                         <div class="w-50 px-1">
                             <label  for="numeroTarjeta" class="form-label">Numero de tarjeta</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="form-group row px-1 pb-5 mb-4 border-bottom">
                         <div class="col-6 col-md-6 col-lg-4">
                             <label for="nombreTarjeta" class="form-label">Expiración</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" required>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4">
                             <label for="numeroTarjeta" class="form-label">CVV</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" required>
                         </div>
                     </div>
                    
-                    <button type="button" class="btn btn-primary btn-lg">Continuar al pago</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Continuar al pago</button>
                 </form>
 
                
                 <aside class="col-12 col-md-5 col-lg-5 col-xl-3 text-white py-sm-5">
                     <div class="list-group">
-                        <div class="list-group-item text-dark border-0 py-1">
+                        <div class="list-group-item text-dark border-0 px-0">
 
                             <div class="d-flex justify-content-between text-dark">
                                 <h3 class="fs-3">Tu carrito</h3><span class="badge rounded-pill fs-5 badge-secondary">3</span>
