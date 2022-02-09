@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+        <!-- MDB -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js" ></script>
+        <title>UD5 | Tarea 2 - Creación páginas con Vanilla JS | Actividad 2</title>
+    </head>
+<body class="container-fluid">
+    <div class="row justify-content-center">
+        
+        <main class="row text-white d-flex justify-content-center p-3">
+                <div class="col-md-12 col-12 col-lg-10 text-center py-5 text-dark">
+                    <h2 class="text-dark">Formulario de pago</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, saepe magnam rem, quisquam recusandae.</p>
+                </div>
+                <form class="col-12 col-md-7 col-lg-8 col-xl-7">
+                    <h3>Dirección de Envío</h3>
+                    <div class="form-group d-flex justify-content-between py-3">
+                        <div class="w-50 px-1">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="w-50 px-1">
+                            <label  for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="w-100 px-1 py-3">
+                        <label for="email" class="form-label">Usuario</label>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control"  name="form-control" placeholder="Usuario">    
+                        </div>
+                    </div>
+
+                    <div class="w-100 px-1 py-3">
+                        <label  for="email" class="form-label">Correo (Opcional)</label>
+                        <input type="email" class="form-control" placeholder="nombre@correo.com">
+                    </div>
+                    
+                    <div class="w-100 px-1 py-3">
+                        <label  for="direccion" class="form-label" >Dirección</label>
+                        <input type="text" class="form-control" placeholder="1234 Calle Principal">
+                    </div>
+
+                    <div class="w-100 px-1 py-3">
+                        <label  for="direccion2" class="form-label" >Dirección 2</label>
+                        <input type="text" class="form-control" placeholder="Interior o información adicional">
+                    </div>
+
+                    <div class="form-group d-flex justify-content-between py-3 border-bottom">
+                        <div class="w-100 px-1">
+                            <label  for="pais" class="form-label">Pais</label>
+
+                            <select name="pais" id="pais" class="form-select mb-3" aria-label="Seleccion de pais" >
+                                <option value="españa">España</option>
+                                <option value="alemania">Alemania</option>
+                                <option value="francia">Francia</option>
+                            </select>
+                        </div>
+
+                        <div class="w-100 px-3">
+                            <label  for="direccion2" class="form-label" >Estado</label>
+
+                            <select name="pais" id="pais" class="form-select mb-3" aria-label="Seleccionar estado" >
+                                <option value="estado1">Estado 1</option>
+                                <option value="estado2">Estado 2</option>
+                                <option value="estado3">Estado 3</option>
+                            </select> 
+                        </div>
+                        
+                        <div class="w-100 px-1">
+
+                            <label for="codigoPostal" class="form-label" >Código Postal</label>
+                            <input type="text" class="form-control">
+                        
+                        </div>
+
+                    </div>
+                    
+                    <div class="w-100 px-1 py-4 text-dark border-bottom">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Enviar a la misma direcicón de facturación</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Guardar información para siguiente compra</label>
+                        </div>
+                    </div>
+                    
+                    <div class="w-100 px-1 text-dark py-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                              Tarjeta de Crédito 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Tarjeta de Debito
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Paypal
+                            </label>
+                          </div>
+                    </div>
+                    
+                    <div class="form-group d-flex justify-content-between pb-4">
+                        <div class="w-50 px-1">
+                            <label for="nombreTarjeta" class="form-label">Nombre en la tarjeta</label>
+                            <input type="text" class="form-control" aria-describedby="ayuda-nombreTarjeta">
+                            <div id="ayuda-nombreTarjeta" class="form-text">
+                                Nombre completo como se muestra en la tarjeta
+                            </div>
+                        </div>
+                        <div class="w-50 px-1">
+                            <label  for="numeroTarjeta" class="form-label">Numero de tarjeta</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row px-1 pb-5 mb-4 border-bottom">
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <label for="nombreTarjeta" class="form-label">Expiración</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <label for="numeroTarjeta" class="form-label">CVV</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                   
+                    <button type="button" class="btn btn-primary btn-lg">Continuar al pago</button>
+                </form>
+
+               
+                <aside class="col-12 col-md-5 col-lg-3 col-xl-3 text-white py-sm-5">
+                    <div class="list-group">
+                        <div class="list-group-item text-dark border-0 py-1">
+
+                            <div class="d-flex justify-content-between text-dark">
+                                <h3 class="fs-3">Tu carrito</h3><span class="badge rounded-pill fs-5 badge-secondary">3</span>
+                            </div>
+                        </div>
+                    </div> 
+                        
+                        <div class="list-group py-3">
+                            <div class="list-group-item text-dark py-3">
+                                
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="fs-5 fw-normal">Nombre del Producto</h4><span class="badge text-dark">$12</span>
+                                </div>
+                                <small class="text-muted text-capitalize">Pequeña descripcion</small>
+                            </div>
+                            
+                            <div class="list-group-item text-dark py-3">
+                                
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="fs-5 fw-normal">Segundo Producto</h4><span class="badge text-dark">$8</span>
+                                </div>
+                                <small class="text-muted text-capitalize">Pequeña descripcion</small>
+                            </div>
+                            
+                            <div class="list-group-item text-dark py-3">
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="fs-5 fw-normal">Tercer Producto</h4><span class="badge text-dark">$5</span>
+                                </div>
+                                <small class="text-muted text-capitalize">Pequeña descripcion</small>
+                            </div>
+
+                            <div class="list-group-item py-3">
+                                <div class="d-flex justify-content-between text-success">
+                                    <h4 class="fs-5 fw-normal">Codigo de descuento</h4><span class="text-success badge text-success">$ -5</span>
+                                </div>
+                                <p class="fs-5 display-5 text-success">CUPONEJEMPLO</p>
+                            </div>
+
+                            <div class="list-group-item text-dark py-3">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fs-5 text-black-50">Total (USD)</p><span class="badge text-dark text-bold">$ -5</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    <div class="list-group">
+                        <div class="list-group-item">
+
+                            <div class="input-group">
+                                <input type="text" class="form-control"  name="form-control" placeholder="Usuario">    
+
+                                <div class="input-group-prepend">
+                                    <button type="button" class="btn btn-secondary" value="">Canjear</button>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            
+            
+        </main>
+
+        
+
+        <footer class="row text-white justify-content-center p-3">
+            <div class="col-10 text-center text-muted">
+                <p>© 2021-2022 Company Name</p>
+
+                <ul class="p-0 d-flex justify-content-center text-decoration-underline">
+                    <a href="#" class="px-3">Privacidad</a>
+                    <a href="#" class="px-3">Terminos y Condiciones</a>
+                    <a href="#" class="px-3">Soporte</a>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>
