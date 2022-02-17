@@ -1,0 +1,7 @@
+#contenedor {
+  background-color: #dbdbdd;
+}
+
+#contenedor .row div {
+  background-color: cadetblue;
+}
