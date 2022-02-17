@@ -1,0 +1,30 @@
+#contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.caja {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+#uno {
+  background-image: url("images_twd/Volume_1.jpg");
+}
+
+#dos {
+  background-image: url("images_twd/Volume_2.jpg");
+}
+
+#tres {
+  background-image: url("images_twd/Volume_3.jpg");
+}
+
+#cuatro {
+  background-image: url("images_twd/Volume_6.jpg");
+}
+
+#cinco {
+  background-image: url("images_twd/Volume_13.jpg");
+}

@@ -1,0 +1,38 @@
+#contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+#contenedor .boton {
+  background-image: url("img/free-media-player-vector-icons.jpg");
+  width: 350px;
+  height: 350px;
+}
+
+#contenedor #play {
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+
+#contenedor #pause {
+  background-position-x: -1050px;
+  background-position-y: 0px;
+}
+
+#contenedor #mute {
+  background-position-x: -350px;
+  background-position-y: -350px;
+}
+
+#contenedor #down {
+  background-position-x: 700px;
+  background-position-y: -350px;
+}
+
+#contenedor #up {
+  background-position-x: 350px;
+  background-position-y: -350px;
+}
