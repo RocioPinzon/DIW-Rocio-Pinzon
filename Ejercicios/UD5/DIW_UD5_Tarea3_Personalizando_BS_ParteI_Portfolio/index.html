@@ -7,14 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js"></script>
     <title>Hello, world!</title>
   </head>
-  <body class="container-fluid p-5">
-    <header class="row text-white justify-content-center bg-dark px-4">
+  <body class="container p-5">
+    <header class="row text-white justify-content-center bg-gris py-4">
     
-        <nav class="navbar navbar-expand-lg col-8">
-                <div class="text-dark">
-                    <a class="navbar-brand" href="#">Rocio Pinzón</a>
+        <nav class="navbar navbar-expand-lg bg-light col-9 p-0">
+                <div class="px-3">
+                    <a class="navbar-brand link-dark fw-bold " href="#">Rocio Pinzón</a>
                     <span class="navbar-text">
                       Desarrollador web
                     </span>
@@ -27,15 +28,33 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav ">
-                  <li class="nav-item bg-primary"><a class="nav-link link-dark" href="#">Portfolio</a></li>
-                  <li class="nav-item bg-primary2"><a class="nav-link" href="#">Acerca de</a></li>
-                  <li class="nav-item bg-primary3"><a class="nav-link" href="#">Contacto</a></li>
+                <ul class="navbar-nav">
+                  <li class="nav-item bg-primary2">
+                    <a class="nav-link text-light p-3" href="#">Portfolio
+                      <span class="row text-center">
+                        <i class="bi bi-briefcase-fill"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item bg-primary">
+                    <a class="nav-link text-light p-3" href="#">Acerca de
+                      <span class="row text-center">
+                        <i class="bi bi-person-fill text-white"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item bg-primary3">
+                    <a class="nav-link text-light p-3" href="#">Contacto
+                      <span class="row text-center">
+                        <i class="bi bi-envelope-fill"></i>
+                      </span>
+                    </a>
+                  </li>
                 </ul>
               </div>
         </nav>
 
-        <div id="carouselExampleIndicators" class="carousel slide col-8" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide col-9 bg-light p-0" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -63,34 +82,131 @@
         </div>
           
     </header>
-    <main class="row text-white justify-content-center bg-dark p-5">
-        <div class="col-8 justify-content-center text-center text-black border-top border-primary">
-          <h2>Portafolio</h2>
+    <main class="row text-white justify-content-center bg-gris">
+      <div class="col-lg-4 col-md-12 mb-4">
+       
+       
+          
+          <img src="img/cafe-ordenador-mesa.jpg"  data-bs-toggle="modal" data-bs-target="#exampleModal" alt="">
 
-          <img src="img/" alt="">
+          
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog w-80">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/cafe-ordenador-mesa.jpg">
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      <!-- Grid column -->
+          <!-- <div class="">
+            <img src="img/cafe-ordenador-mesa.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/mesa-ordenador.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/ordenador-accesorios.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/ordenador-portatil.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/ordenador.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portatil.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/tablet.jpg" alt="">
+          </div>-->
+
+
+        
+        <div class="col-9 p-0">
+          <div class="row text-center py-5 justify-content-center align-items-center">
+            <div class="col-4 px-4">
+              <div class="container w-75 px-4">
+                <img src="img/foto-perfil.jpg" width="200" height="200" class="img-fluid w-100 rounded-circle float-start mb-3" alt="foto-perfil">
+                <p class="">Rocío Pinzón</p>
+              </div>
+            </div>
+
+            <section class="col-8">
+              <article class="text-start">
+                <h3>Acerca de</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quidem tenetur beatae labore fugit ad rem tempora, 
+                  repudiandae suscipit, facilis autem assumenda.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quidem tenetur beatae labore fugit ad rem tempora, 
+                  repudiandae suscipit, facilis autem assumenda.</p>
+          
+              </article>
+              <article class="text-start">
+                <p class="fs-6 fw-bold text-primary3 mb-1">HTML</p>
+                <div class="progress mb-3 bg-primary3">                  
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%
+                  </div>
+                </div>
+                <p class="fs-6 fw-bold text-primary3 mb-1">CSS</p>
+                <div class="progress mb-3 bg-primary3">
+                  
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%
+                  </div>
+                </div>
+                <p class="fs-6 fw-bold text-primary3 mb-1">JS</p>
+                <div class="progress mb-3 bg-primary3">
+                  
+                  <div class="progress-bar " role="progressbar" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+        <div class="col-7 text-center py-5 border-bottom border-top border-secondary">
+          <h2 class="pb-5">Contacto</h2>
+          <form action="">
+            <div class="row g-1">
+              <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Correo">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <textarea name="" class="form-control" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary2 text-light">Enviar</button>
+          </form>
         </div>
     </main>
-    <footer class="row text-white justify-content-center bg-dark px-4">
+    <footer class="row text-white p-5 bg-gris">
         <!-- Section: Social media -->
-    <section class="mb-4">
+      <section class="text-center">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1 bg-black" href="#!" role="button" >
-          <i class="bi bi-facebook"></i>
+        <a class="btn btn-lg bg-primary2 m-1 rounded-circle text-light" href="#!" role="button" >
+          <i class="bi bi-twitter fa-10x"></i>
         </a>
 
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
+        <!-- Twitter -->
+        <a class="btn btn-lg bg-morado m-1 rounded-circle text-light" href="#!" role="button" >
+          <i class="bi bi-instagram"></i>
+        </a>
 
+        <!-- Instagram -->
+        <a class="btn btn-lg bg-primary m-1 rounded-circle text-light" href="#!" role="button">
+          <i class="bi bi-facebook"></i>
+        </a>
       
-
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <i class="bi bi-facebook"></i>
-     
       </section>
     </footer>
 
