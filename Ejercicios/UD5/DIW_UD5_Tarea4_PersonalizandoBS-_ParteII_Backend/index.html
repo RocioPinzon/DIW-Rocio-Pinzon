@@ -8,96 +8,165 @@
 
     <title>UD5 | Tarea 4 - Backend</title>
 </head>
-<body class="container-fluid ">
-    <div class="row bg-gris">
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-sm-auto bg-dark sticky-top col-lg-2 text-start">
+                <div class="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top">
+                    <a href="/" class="d-block p-3 link-light text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                        <span class="fs-4">Dashboard</span>
+                    </a>
+                    <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-sm-start">
+                       
+                        <li>
+                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                                <i class="bi bi-house-door-fill"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+                                <i class="bi bi-file-earmark-plus"></i>
+                                Entradas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                                <i class="bi bi-people-fill"></i>
+                                Usuarios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                                <i class="bi bi-gear-fill"></i>
+                                Configuarción
+                            </a>
+                        </li>
 
-        
-        <header class="col-2 flex-shrink-0 text-white h-100">
-            <!-- Sidebar -->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-    
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-4">Sidebar</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-                Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="bi bi-house-door-fill"></i>
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="bi bi-file-earmark-plus"></i>
-                    Entradas
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="bi bi-people-fill"></i>
-                Usuarios
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="bi bi-gear-fill"></i>
-                    Configuarción
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <i class="bi bi-box-arrow-right"></i>
-                    Salir
-                </a>
-            </li>
-            </ul>
-            <hr>
-        </div>
-        </header>
-        <main class="col-6 text-white justify-content-center p-5 ">
-             <form action="" method="post" class="form">
-                <h2 class="text-black">Nueva entrada</h2>
-                <input type="text" class="form-control" placeholder="Titulo de la entrada">
-
-                <textarea name="" class="form-control" cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."></textarea>
+                        <li>
+                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                                <i class="bi bi-box-arrow-right"></i>
+                                Salir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="col-sm p-3 min-vh-100 bg-gris">
+                <div class="row justify-content-center">
+                   
+                    <main class="col-md-10 ml-sm-auto col-lg-6 pt-3 px-4">
+                         <form action="" method="post" class="form">
+                            <h2 class="text-black">Nueva entrada</h2>
+                            <input type="text" class="form-control mb-2" placeholder="Titulo de la entrada">
+            
+                            <textarea name="" class="form-control" cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."></textarea>
+                            
+                            <button type="submit" class="btn btn-primary justify-content-end my-4" value="Enviar">Enviar</button>
+                        </form>
+                    </main>
                 
-                <button type="submit" class="btn btn-primary justify-content-end" value="Enviar">Enviar</button>
-            </form>
-        </main>
-    
-        <aside class="col-4 text-white  p-5">
-            <div class="row justify-content-center">
-                <h2 class="text-black">Estadisticas</h2>
-                <div class="col-2 bg-light text-center">
-                    <p class="text-success">15,236</p>
-                    <p class="text-black">Visitas</p>
-                </div>
+                    <aside class="col-sm-12 col-md-10 ml-sm-auto col-lg-6 col-xl-5 col-xxl-4 pt-3 px-4">
+                        <div class="row justify-content-center gy-4 mb-4">
+                            <h2 class="text-black">Estadisticas</h2>
+                            <div class="col-3 bg-light text-center p-3 border-bottom">
+                                <p class="text-success fw-bold">15,236</p>
+                                <p class="text-black">Visitas</p>
+                            </div>
+            
+                            <div class="col-3 bg-light text-center p-3 border-bottom">
+                                <p class="text-success fw-bold">1,931</p>
+                                <p class="text-black">Registros</p>
+                            </div>
+            
+                            <div class="col-3 bg-light text-center p-3 border-bottom">
+                                <p class="text-success fw-bold">$160545</p>
+                                <p class="text-black">Ingresos</p>
+                            </div>
+            
+                        </div>
+                        <div class="row justify-content-center">
+                            <h2 class="text-black">Comentarios</h2>
 
-                <div class="col-2 bg-light text-center">
-                    <p class="text-success">1,931</p>
-                    <p class="text-black">Registros</p>
-                </div>
+                            <div>
+                                <div class="list-group">
+                                    <div class="list-group-item bg-light p-4">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="w-25">
+                                                <img src="img/foto-perfil.jpg" class="w-100 rounded-circle" alt="">
+                                            </div>
+                                            <div class="w-75 px-md-4 ">
+                                                <p class="mb-0"><a href="#">Jhon Doe</a></p>
+                                                <p>en <a href="#">Mi primera entrada</a></p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group-sm" role="group" aria-label="Grupo botones">
+                                            <button type="button" class="btn btn-success"><i class="bi bi-check-lg"></i>Aprobar</button>
+                                            <button type="button" class="btn btn-danger"><i class="bi bi-trash-fill"></i>Eliminar</button>
+                                            <button type="button" class="btn btn-secondary"><i class="bi bi-x-lg"></i>Bloquear</button>
+        
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item bg-light p-4">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="w-25">
+                                                <img src="img/foto-perfil.jpg" class="w-100 rounded-circle" alt="">
+                                            </div>
+                                            <div class="w-75 px-md-4 ">
+                                                <p class="mb-0"><a href="#">Jhon Doe</a></p>
+                                                <p>en <a href="#">Mi primera entrada</a></p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group-sm" role="group" aria-label="Grupo botones">
+                                            <button type="button" class="btn btn-success"><i class="bi bi-check-lg"></i>Aprobar</button>
+                                            <button type="button" class="btn btn-danger"><i class="bi bi-trash-fill"></i>Eliminar</button>
+                                            <button type="button" class="btn btn-secondary"><i class="bi bi-x-lg"></i>Bloquear</button>
+        
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item bg-light p-4">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="w-25">
+                                                <img src="img/foto-perfil.jpg" class="w-100 rounded-circle" alt="">
+                                            </div>
+                                            <div class="w-75 px-md-4 ">
+                                                <p class="mb-0"><a href="#">Jhon Doe</a></p>
+                                                <p>en <a href="#">Mi primera entrada</a></p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group-sm" role="group" aria-label="Grupo botones">
+                                            <button type="button" class="btn btn-success"><i class="bi bi-check-lg"></i>Aprobar</button>
+                                            <button type="button" class="btn btn-danger"><i class="bi bi-trash-fill"></i>Eliminar</button>
+                                            <button type="button" class="btn btn-secondary"><i class="bi bi-x-lg"></i>Bloquear</button>
+        
+                                        </div>
+                                    </div>
+                                </div>
 
-                <div class="col-2 bg-light text-center">
-                    <p class="text-success">$160545</p>
-                    <p class="text-black">Ingresos</p>
-                </div>
+                               
+                            </div>
+                            <div>
 
+                            </div>
+                            <div></div>
+                        </div>
+
+
+            
+                    </aside>
+                </div>
             </div>
-            <div>
-                <h2 class="text-black">Comentarios</h2>
-            </div>
-
-        </aside>
+        </div>
     </div>
+
+
+
+
+
+    
     <script src="lib/bootstrap-5.1.3/dist/js/bootstrap.min.js"></script>
 
 </body>
