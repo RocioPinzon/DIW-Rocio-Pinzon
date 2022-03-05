@@ -3,6 +3,12 @@ header img {
   max-height: 50px;
 }
 
+main #img-inicio {
+  background-image: url("img/pescador-cana-pesca.jpg");
+  height: 80vh;
+  background-size: cover;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

@@ -7,5 +7,12 @@ header img {
     max-height: 50px;
 }
 
+main #img-inicio {
+    background-image: url("img/pescador-cana-pesca.jpg");
+    height: 80vh;
+    background-size: cover;
+  }
+
+
 @import "../lib/bootstrap-5.1.3/scss/bootstrap";
     
