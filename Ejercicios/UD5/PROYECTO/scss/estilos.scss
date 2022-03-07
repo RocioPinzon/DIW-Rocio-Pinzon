@@ -1,4 +1,29 @@
-@use 'clasesBS5.scss';
+
+
+$blanco:#F5FFF3;
+$negro-base:#111;
+$azul2: #0FA3B1;
+$azul-detalles:#33BBC1;
+$verde:#45A43D;
+
+// Crear colores propios
+$custom-colors: (
+    "negro-base":$negro-base,
+    "azul2":$azul2,
+    "azul-detalles":$azul-detalles,
+    "verde":$verde,
+    "blanco":$blanco,
+    "negro-base":$negro-base
+  );  
+ 
+// Unir colores
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
 
 #img-logo {
     max-height: 50px;

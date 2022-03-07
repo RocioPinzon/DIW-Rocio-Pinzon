@@ -1,5 +1,8 @@
 
-@use 'clasesBS5.scss';
+@import "../lib/bootstrap-5.1.3/scss/functions";
+@import "../lib/bootstrap-5.1.3/scss/variables";
+@import "../lib/bootstrap-5.1.3/scss/mixins";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 $blanco:#F5FFF3;
 $negro-base:#111;
@@ -13,8 +16,10 @@ $custom-colors: (
     "azul2":$azul2,
     "azul-detalles":$azul-detalles,
     "verde":$verde,
+    "blanco":$blanco,
+    "negro-base":$negro-base,
   );  
-
+ 
 // Unir colores
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
