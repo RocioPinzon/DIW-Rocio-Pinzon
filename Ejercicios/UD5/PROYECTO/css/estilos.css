@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-header img {
+#img-logo {
   max-height: 50px;
 }
 
@@ -7,6 +7,24 @@ main #img-inicio {
   background-image: url("img/pescador-cana-pesca.jpg");
   height: 80vh;
   background-size: cover;
+}
+
+#img-footer {
+  background-image: url("img/silueta-pescadores-pescando.png");
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+#div-footer {
+  max-height: 10px;
+}
+
+@media (max-width: 1199.98px) {
+  #img-footer {
+    height: 50vh;
+    background-size: 100%;
+  }
 }
 
 /*!
