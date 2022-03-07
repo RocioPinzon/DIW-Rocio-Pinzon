@@ -1,19 +1,19 @@
 
 
 $blanco:#F5FFF3;
-$negro-base:#111;
+$negro-base:#000;
 $azul2: #0FA3B1;
 $azul-detalles:#33BBC1;
 $verde:#45A43D;
-
+$dark:#111;
 // Crear colores propios
 $custom-colors: (
-    "negro-base":$negro-base,
+    "negro-base":$negro-base, 
     "azul2":$azul2,
     "azul-detalles":$azul-detalles,
     "verde":$verde,
     "blanco":$blanco,
-    "negro-base":$negro-base
+    "dark":$dark,
   );  
  
 // Unir colores
