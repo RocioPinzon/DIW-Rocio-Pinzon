@@ -27,7 +27,7 @@
             <a href="#" class="navbar-brand"><img src="img/logo-blanco-tienda-pesca.png" id="img-logo" class="img-fluid" alt="logo-blanco-pescador"></a>
 
             <!--boton movil-->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            <button class="bg-blanco navbar-toggler" type="button" data-mdb-toggle="collapse"
             data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars white-icon"></i>
             </button>
@@ -48,50 +48,71 @@
      <!--  MAIN  -->
     <main class="container p-0">
 
-        <div class="row text-center justify-content-around">
+        <div class="row text-center justify-content-around my-5">
           <!--  TITULO CONTACTO  -->
-          <div class="row col-12 justify-content-center m-5">
+          <div class="row col-12 justify-content-center my-5">
             <h2 class="text-center">CONTACTO</h3>
             <div class="w-25 border border-azul-detalles my-3"></div>
             <h4 class="text-center fst-italic fw-light">Localizanos a través de estas vías</h4>
 
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-4 col-md-3">
             <i class="bi bi-envelope text-verde fs-1 "></i>
             <p>info@proyecto.es</p>
 
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-4 col-md-3">
             <i class="bi bi-pin-map text-verde fs-1"></i>
             <p>c/proyecto 123, Bajo Izq, Oviedo (Asturias)</p>
 
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-4 col-md-3">
             <i class="bi bi-telephone text-verde fs-1"></i>
             <p>+34 666 66 66 66</p>
           </div>
         </div>
 
-        <div class="row text-center justify-content-around">
+        <div class="row text-center justify-content-around my-3">
             
           
           <!--  TITULO FORMULARIO  -->
-            <div class="row col-12 justify-content-center m-5">
+            <div class="row col-12 justify-content-center my-3">
               <h2 class="text-center">FORMULARIO</h3>
-              <div class="w-25 border border-azul-detalles my-3"></div>
+              <div class="w-25 border border-azul-detalles"></div>
               <h4 class="text-center fst-italic fw-light">Te responderemos lo antes posible</h4>
 
             </div>
-          <form action="">
-            <label for="">Nombre</label>
-            <input type="text" name="" id="">
 
-            <label for="">Apellido</label>
-            <input type="text" name="" id="">
+            <!--  FORMULARIO  -->
+            <form class="bg-azul2 col-12 col-md-10 col-xl-8 px-lg-4 py-4 ">
+              <div class="form-group d-flex justify-content-between py-3">
+                  <div class="w-50 px-1 text-start">
+                      <label for="name" class="form-label text-start">Nombre</label>
+                      <input type="text" class="form-control" id="name" required>
+                  </div>
+                  <div class="w-50 px-1 text-start">
+                      <label  for="apellidos" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" required>
+                  </div>
+              </div>
 
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div class="w-100 px-1 py-3 text-start">
+                  <label for="email" class="form-label">Correo</label>
 
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <div class="input-group-text">@</div>
+                      </div>
+                      <input type="email" class="form-control" placeholder="nombre@correo.com">             
+                  </div>
+              </div>
 
+              <div class="form-group mb-3 text-start">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-blanco text-dark fw-bold">Enviar</button>
           </form>
 
         </div>
@@ -101,13 +122,13 @@
     <footer id="img-footer" class="bg-image row text-center align-items-end p-0 mx-0">
 
       <div class="col-12">
-        <div class="row bg-dark align-items-center justify-content-between py-3">
+        <div class="row bg-negro-base align-items-center justify-content-around py-3">
           
-          <div class="col-12 col-md-2">
+          <div class="col-12 col-md-2 p-2 order-1 order-md-1">
             <a href="#" class="navbar-brand"><img src="img/logo-blanco-tienda-pesca.png" id="img-logo" class="img-fluid" alt="logo-blanco-pescador"></a>
           </div>
   
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-7 p-2 order-3 order-md-2">
             <p class="text-light mb-0">
               Todos los derechos reservados |
               <a href="#" class="link-light text-decoration-none">Aviso Legal</a> |
@@ -115,10 +136,10 @@
             </p>
           </div>
   
-          <div class="col-12 col-md-3 ">
+          <div class="col-12 col-md-3 p-2 order-2 order-md-3">
             <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram text-verde fs-2 mx-2"></i></a>
-            <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin text-danger fs-2 mx-2"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook text-danger fs-2 mx-2"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin text-verde text-verde fs-2 mx-2"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook text-verde text-verde fs-2 mx-2"></i></a>
           </div>
         </div>
       </div>   
