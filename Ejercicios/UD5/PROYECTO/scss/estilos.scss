@@ -3,6 +3,7 @@
 @import "../lib/bootstrap-5.1.3/scss/mixins";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+@import url("font/FISHBOWL.TTF");
 
 $blanco:#ffffff63;
 $negro-base:#000;
@@ -29,6 +30,9 @@ $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
+h1, h2, h3{
+    font-family: 'FISHBOWL', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 #img-logo {
     max-height: 50px;
