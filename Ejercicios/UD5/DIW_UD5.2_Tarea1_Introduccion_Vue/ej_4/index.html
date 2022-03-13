@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    
+
+
+    <title>UD5.2  Tarea 1 Introduccion a Vue | Ejercicio 1</title>
+</head>
+<body>
+
+    <div id="app" v-on:submit.prevent="guardarTarea">
+        <form action="">
+            <input v-model="nuevaTarea" type="text">
+            <input type="submit" value="Guardar" />
+            <input v-on:click="quitarTarea" type="button" value="Quitar" />
+        </form>
+        <ul>
+            <li v-for="tarea in tareas">{{tarea}}</li>
+        </ul>
+        
+        <pre>{{$data}}</pre>
+    </div>
+        
+        
+        
+    <script src="js/script.js"></script>
+</body>
+</html>
